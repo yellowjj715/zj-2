@@ -1,1 +1,5 @@
-# zj-2
+基本模块介绍：支持基础算子和基础分布式流式计算引擎，并实现了一个流式WordCount应用。让WordCount应用支持基于事件时间的Window处理，支持retract计算和支持自动故障恢复。
+
+如何启动该项目：在IDEA中先在pom.xml中下载好依赖，然后在src/main/scala/zj/itcast下运行source_Kafka.scala文件。
+
+如何验证流程：首先在Linux配置好Zookeeper和Kafka环境，在Kafka中创建topic名为“myTopic”，并以Kafka为生产者，然后在Kafka中输入数据可得出结果。
